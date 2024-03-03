@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">    
+
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/logo.svg" alt="Logo GitFav">
+            <div id="input-wrapper">
+                <label for="search-input" class="sr-only">Digite o Github Username</label>
+                <input type="text" id="search-input" placeholder="Digite o Github Username">
+                <button id="favorite-btn"><img src="./assets/star-fav-btn.svg" alt="Estrela de favorito">FAVORITAR</button>
+            </div>
+        </header>
+         <main>
+            <table>
+                <thead>
+                    <th>Usuário</th>
+                    <th>Repositórios</th>
+                    <th>Seguidores</th>
+                    <th>Ação</th>
+                </thead>
+                <tbody>
+                    
+                    <tr class="no-favorites">
+                        <td colspan="4">
+                            <div>
+                                <img src="./assets/star-emoji.svg" alt="">
+                                <h1>Nenhum favorito ainda</h1>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- <tr class="favorite-user">
+                        <td class="profile">
+                            <img class="profile-img" src="https://github.com/jairomanosso.png" alt="Imagem de perfil do usuário">
+                            <a href="" class="profile-data-container" target="_blank">
+                                <h3 class="username">Jairo Manosso Filho</h3>
+                                <p class="login">/jairomanosso</p>
+                            </a>
+                        </td>
+                        <td class="public-repos">123</td>
+                        <td class="followers">12345</td>
+                        <td><button class="remove-user-btn">Remover</button></td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+         </main>
+    </div>
+
+    <script type="module" src="./src/index.js"></script>
+
+</body>
+</html>
